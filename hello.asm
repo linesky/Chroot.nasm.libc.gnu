@@ -1,17 +1,15 @@
-global start
-global _start
+global main
 extern puts
 extern exit
-start:
-nop            
-_start:
+        
+main:
     mov eax,hello
     push eax
     call puts
     add esp,4
     mov eax,0
     push eax
-    call exits
+    call exit
     add esp,4
     ret
 section .data

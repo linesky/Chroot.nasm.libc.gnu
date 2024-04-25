@@ -3,7 +3,7 @@ roots=$(pwd)/roots
 tmps=/tmp/lists.txt
 tmps2=/tmp/lists2.txt
 nasm -f elf32 hello.asm -o hello.o
-ld /lib/i386-linux-gnu/libc.a hello.o -o hello
+gcc hello.o -o hello
 mkdir -p $roots
 mkdir -p $roots/usr
 mkdir -p $roots/usr/bin
