@@ -2,7 +2,7 @@ printf "\x1bc\x1b[43;37m"
 roots=$(pwd)/roots
 tmps=/tmp/lists.txt
 tmps2=/tmp/lists2.txt
-nasm -f elf32 nasm.asm -o hello.o
+nasm -f elf32 hello.asm -o hello.o
 ld /lib/i386-linux-gnu/libc.a hello.o -o hello
 mkdir -p $roots
 mkdir -p $roots/usr
